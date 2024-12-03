@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG Multimodal Model</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Multimodal RAG System</h1>
+        <form id="uploadForm">
+            <label for="textInput">Enter Text:</label>
+            <textarea id="textInput" name="text" rows="4" cols="50" placeholder="Type your query here..."></textarea>
+            
+            <label for="imageInput" class="custom-file-label">Upload an Image</label>
+            <input type="file" id="imageInput" name="image" accept="image/*">
+            
+            <label for="audioInput" class="custom-file-label">Upload an Audio File</label>
+            <input type="file" id="audioInput" name="audio" accept="audio/*">
+            
+            <button type="submit"> Generate Answer</button>
+        </form>
+        <div id="responseSection">
+            <h2>Response:</h2>
+            <p id="responseText">Awaiting response...</p>
+        </div>
+    </div>
+
+    <div class="about-section">
+        <h2>About the Project</h2>
+        <p>
+            The Multimodal RAG System is an innovative solution that combines retrieval-augmented generation (RAG) with multimodal data processing.
+            It is designed to analyze and generate answers using text, images, and audio, making it ideal for applications in education, healthcare, and research.
+            By integrating advanced AI technologies, we aim to make knowledge more accessible and contextualized for everyone.
+        </p>
+    </div>
+
+    <div class="team-section">
+        <h2>Smile Team</h2>
+        <div class="team-member">
+            <h3>Arina Bratashenko</h3>
+            <p>Project Lead & AI Developer</p>
+        </div>
+        <div class="team-member">
+            <h3>Nikita Shamilyan</h3>
+            <p>Backend Developer</p>
+        </div>
+        <div class="team-member">
+            <h3>Pyhtin Ivan</h3>
+            <p>UX/UI Designer</p>
+        </div>
+    </div>
+
+
+
+    <script src="back.js"></script>
+</body>
+</html>
